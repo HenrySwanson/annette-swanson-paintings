@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title ~ " | Annette Swanson" }}</title>
+
+    <!-- embed code generated from google fonts. consider cutting down how many variants to include? -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- goes after fonts -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <header>Annette Swanson Paintings</header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/home">Home</a>
+        </li>
+        <li>
+          <a href="/plein-air">Plein Air</a>
+        </li>
+        <li>
+          <a href="/fruits-and-vegetables">Fruits & Vegetables</a>
+        </li>
+        <li>
+          <a href="/Galleries">Galleries</a>
+        </li>
+        <li>
+          <a href="/Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>{% block content %} {% endblock %}</main>
+  </body>
+</html>

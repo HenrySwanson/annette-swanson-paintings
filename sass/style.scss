@@ -1,0 +1,59 @@
+$TITLE_COLOR: rgb(37, 49, 141);
+$BORDER_COLOR: rgb(56, 74, 211);
+$LINK_COLOR: rgb(133, 133, 133);
+$LINK_COLOR_HOVER: black;
+
+body {
+  min-width: max-content;
+  width: 980px;
+  margin: auto;
+}
+
+header {
+  // header already fills the width, just center the text
+  text-align: center;
+
+  // font stuff
+  color: $TITLE_COLOR;
+  font-size: 32px;
+  font-family: roboto, sans-serif;
+  font-weight: 100;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+nav {
+  font-family: roboto, sans-serif;
+  text-transform: uppercase;
+
+  border-top: 1px solid $BORDER_COLOR;
+  border-bottom: 1px solid $BORDER_COLOR;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    // don't let them get squeezed too close horizontally,
+    // and give them some breathing room vertically
+    margin: 1ex 0.5em;
+  }
+
+  a {
+    text-decoration: none;
+
+    // TODO: figure out how to highlight the link for this specific page
+    color: $LINK_COLOR;
+    &:hover {
+        color: $LINK_COLOR_HOVER;
+    }
+
+    // gently highlight link
+    transition: color 0.4s ease 0s;
+  }
+}
