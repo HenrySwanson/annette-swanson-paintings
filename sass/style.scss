@@ -4,10 +4,11 @@ $LINK_COLOR: rgb(133, 133, 133);
 $LINK_COLOR_HOVER: black;
 
 body {
-  min-width: max-content;
-  width: 980px;
+  max-width: 980px;
   margin: auto;
   font-family: roboto, sans-serif;
+  background-color: white;
+  color: black;
 }
 
 header {
@@ -29,6 +30,8 @@ nav {
 
   border-top: 1px solid $BORDER_COLOR;
   border-bottom: 1px solid $BORDER_COLOR;
+  margin-top: 16px;
+  margin-bottom: 16px;
 
   ul {
     list-style: none;
@@ -50,7 +53,7 @@ nav {
     // TODO: figure out how to highlight the link for this specific page
     color: $LINK_COLOR;
     &:hover {
-        color: $LINK_COLOR_HOVER;
+      color: $LINK_COLOR_HOVER;
     }
 
     // gently highlight link
@@ -59,15 +62,28 @@ nav {
 }
 
 main {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    p {
-        // center-align text by default (includes images; they're wrapped in <p>)
-        text-align: center;
-    }
+  // center-align text by default (includes images; they're wrapped in <p>)
+  text-align: center;
 }
 
-#contact-info {
-    font-size: 20px;
-    font-weight: 100;
+figure {
+  width: min-content;
+  margin: 0 auto;
+}
+
+figcaption {
+    font-size: small;
+}
+
+.gallery-info {
+  margin: 4ex auto;
+}
+
+.central-body-text {
+  font-size: 20px;
+  font-weight: 100;
+  width: 750px;
+  margin: 0 auto;
 }

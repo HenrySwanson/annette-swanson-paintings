@@ -4,7 +4,8 @@ title = "Contact"
 
 ![alt text](/recovered-images/i-see-home.jpg)
 
-<div id="contact-info">
+<!-- TODO make this consistent with other page text -->
+<div class="central-body-text">
 
 For pricing information or to purchase, please contact me.
 
