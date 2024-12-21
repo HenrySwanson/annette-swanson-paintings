@@ -1,0 +1,11 @@
+<div class="gallery-box">
+  {% set data = load_data(path=path) %}
+  {% for painting in data %}
+    {% set img_slug = painting.title | slugify %}
+    {% set img_name = painting.image | default(value=img_slug) %}
+    <figure>
+      <img src={{ "/recovered-images/" ~ img_name ~ ".jpg" }} alt='missing' />
+      <figcaption>{{painting.title}}</figcaption>
+    </figure>
+  {% endfor %}
+</div>
