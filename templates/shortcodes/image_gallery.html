@@ -5,7 +5,7 @@
     {% set img_name = painting.image | default(value=img_slug) %}
     <figure>
       <img src={{ "/recovered-images/" ~ img_name ~ ".jpg" }} alt='missing' />
-      <figcaption>{{painting.title}}</figcaption>
+      <figcaption style="text-transform: uppercase;">{{painting.title}}</figcaption>
     </figure>
   {% endfor %}
 </div>
