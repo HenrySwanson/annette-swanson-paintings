@@ -73,8 +73,14 @@ figure {
   margin: 0 auto;
 }
 
-figcaption {
+.small {
     font-size: small;
+}
+
+.gallery-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
 }
 
 .gallery-info {
