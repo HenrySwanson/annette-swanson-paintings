@@ -2,7 +2,7 @@
 title = "Fruits & Vegetables"
 +++
 
-{{ image_gallery(path="fruits_and_vegetables.json") }}
+{{ image_gallery(path="still_life.json") }}
 
 <div class="central-body-text">
 
