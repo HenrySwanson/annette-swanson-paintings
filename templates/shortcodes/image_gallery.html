@@ -3,8 +3,11 @@
   {% for painting in data %}
     {% set img_slug = painting.title | slugify %}
     {% set img_name = painting.image | default(value=img_slug) %}
+    {% set img_path = "/paintings/" ~ img_name ~ ".jpg" %}
+
+    {% set image = resize_image(path=img_path, width=326, height=435, op="fit") %}
     <figure>
-      <img src={{ "/recovered-images/" ~ img_name ~ ".jpg" }} alt='missing' />
+      <img src={{ image.url }} alt='missing' />
       <figcaption style="text-transform: uppercase;">{{painting.title}}</figcaption>
     </figure>
   {% endfor %}

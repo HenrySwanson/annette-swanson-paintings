@@ -2,7 +2,7 @@
 title = "Contact"
 +++
 
-![alt text](/recovered-images/i-see-home.jpg)
+![alt text](/i-see-home.jpg)
 
 <!-- TODO make this consistent with other page text -->
 <div class="central-body-text">

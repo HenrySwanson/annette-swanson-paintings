@@ -1,4 +1,9 @@
 [
-  { "title": "Oranges - NOT FOR SALE", "image": "oranges" },
-  { "title": "Turnips" }
+  { "title": "An Orange" },
+  { "title": "Bounty" },
+  { "title": "Bowl & Pear", "image": "bowl-and-pear" },
+  { "title": "Radishes" },
+  { "title": "Sunflowers" },
+  { "title": "Turnips" },
+  { "title": "Twin Oranges" }
 ]

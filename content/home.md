@@ -2,7 +2,7 @@
 title = "Home"
 +++
 
-{% captioned_image(src="/recovered-images/the-bambi.jpg") %}
+{% captioned_image(src="/the-bambi.jpg") %}
 <span class="small">*The Bambi* was accepted into Foot in the Door 2020 at the Minneapolis Institute of Arts.</span>
 {% end %}
 
