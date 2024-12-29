@@ -7,6 +7,13 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+# We have the raw photographs of the paintings in this repository so that
+# we don't lose them. But they're large and not cropped and so we don't
+# want them in the website output.
+# Note: to ignore directories we need to ignore the directory and its children,
+# which is a little awkward.
+ignored_static = ["paintings_raw", "paintings_raw/**"]
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
