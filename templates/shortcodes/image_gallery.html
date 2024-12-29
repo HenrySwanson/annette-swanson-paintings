@@ -5,7 +5,7 @@
     {% set img_name = painting.image | default(value=img_slug) %}
     {% set img_path = "/paintings/" ~ img_name ~ ".jpg" %}
 
-    {% set image = resize_image(path=img_path, width=326, height=435, op="fit") %}
+    {% set image = resize_image(path=img_path, width=435, height=326, op="fit") %}
     <figure>
       <img src={{ image.url }} alt='missing' />
       <figcaption style="text-transform: uppercase;">{{painting.title}}</figcaption>

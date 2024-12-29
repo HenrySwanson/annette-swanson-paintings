@@ -1,5 +1,5 @@
 +++
-title = "Fruits & Vegetables"
+title = "Still Life"
 +++
 
 {{ image_gallery(path="still_life.json") }}
