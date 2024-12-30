@@ -1,5 +1,4 @@
-$TITLE_COLOR: rgb(37, 49, 141);
-$BORDER_COLOR: rgb(56, 74, 211);
+$TITLE_COLOR: rgb(20, 20, 110);
 $LINK_COLOR: rgb(133, 133, 133);
 $LINK_COLOR_HOVER: black;
 $BACKGROUND_COLOR: rgb(20, 20, 110);
@@ -26,7 +25,7 @@ header {
 
   // font stuff
   color: $TITLE_COLOR;
-  font-size: 32px;
+  font-size: 24pt;
   font-weight: 100;
 
   margin-top: 16px;
@@ -37,8 +36,8 @@ nav {
   font-family: roboto, sans-serif;
   text-transform: uppercase;
 
-  border-top: 1px solid $BORDER_COLOR;
-  border-bottom: 1px solid $BORDER_COLOR;
+  border-top: 1px solid $TITLE_COLOR;
+  border-bottom: 1px solid $TITLE_COLOR;
   margin-top: 16px;
   margin-bottom: 16px;
 
@@ -116,7 +115,7 @@ figure {
 }
 
 .central-body-text {
-  font-size: 20px;
+  font-size: 16pt;
   font-weight: 100;
   margin: 0 auto;
 }
