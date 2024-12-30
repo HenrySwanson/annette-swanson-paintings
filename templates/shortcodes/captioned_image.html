@@ -1,4 +1,6 @@
 <figure>
     <img src={{ src }} alt='missing' />
+    {% if body %}
     <figcaption>{{ body | markdown(inline=true) | safe }}</figcaption>
+    {% endif %}
 </figure>

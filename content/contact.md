@@ -2,7 +2,7 @@
 title = "Contact"
 +++
 
-![alt text](/i-see-home.jpg)
+{{ captioned_image(src="/i-see-home.jpg") }}
 
 <!-- TODO make this consistent with other page text -->
 <div class="central-body-text">

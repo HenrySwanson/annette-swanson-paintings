@@ -45,6 +45,7 @@ nav {
   ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
     margin: 0;
@@ -77,9 +78,14 @@ main {
   text-align: center;
 }
 
+// For single figures, like on the home page
 figure {
-  width: min-content;
   margin: 0 auto;
+
+  img {
+    // Let the image fill up the figure, up to a limit
+    width: min(100%, 480px);
+  }
 }
 
 .small {
@@ -88,8 +94,21 @@ figure {
 
 .gallery-box {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 40px;
+  // fit as many images as you can, as long as they aren't smaller
+  // than a certain width limit
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 40px;
+  align-items: center;
+
+  figure {
+    width: 100%;
+    margin: 0 auto;
+
+    img {
+      // Let the image fill up the grid cell, up to a limit
+      width: min(100%, 480px);
+    }
+  }
 }
 
 .gallery-info {
@@ -99,6 +118,5 @@ figure {
 .central-body-text {
   font-size: 20px;
   font-weight: 100;
-  width: 750px;
   margin: 0 auto;
 }
