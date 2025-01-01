@@ -3,7 +3,7 @@
   { "title": "Bounty" },
   { "title": "Bowl & Pear", "image": "bowl-and-pear" },
   { "title": "Radishes" },
-  { "title": "Sunflowers" },
-  { "title": "Turnips" },
+  { "title": "Sunflowers", "sold": true },
+  { "title": "Turnips" , "sold": true},
   { "title": "Twin Oranges" }
 ]

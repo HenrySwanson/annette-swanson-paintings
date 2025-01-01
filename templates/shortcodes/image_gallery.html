@@ -8,7 +8,10 @@
     {% set image = resize_image(path=img_path, width=480, height=360, op="fit") %}
     <figure>
       <img src={{ image.url }} alt='missing' />
-      <figcaption style="text-transform: uppercase;">{{painting.title}}</figcaption>
+      <figcaption>{{painting.title | upper }}</figcaption>
+      {% if painting.sold %}
+      <figcaption style="font-size: small;">Sold</figcaption>
+      {% endif %}
     </figure>
   {% endfor %}
 </div>
