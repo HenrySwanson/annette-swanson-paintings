@@ -102,11 +102,25 @@ figure {
   figure {
     width: 100%;
     margin: 0 auto;
+  }
 
-    img {
-      // Let the image fill up the grid cell, up to a limit
-      width: min(100%, 480px);
-    }
+  .gallery-image-wrapper {
+    // Let the image fill up the grid cell, up to a limit
+    width: min(100%, 480px);
+
+    // Allow for positioning the SVG dot
+    position: relative;
+  }
+
+  .sold-dot {
+    position: absolute;
+    bottom: 7px; // i have to add 4 pixels for some reason
+    right: 3px;
+    background-color: red;
+    border: solid gray 1px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
   }
 }
 
