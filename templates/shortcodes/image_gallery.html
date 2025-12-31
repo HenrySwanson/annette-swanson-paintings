@@ -2,8 +2,8 @@
   {% set data = load_data(path=path) %}
   {% for painting in data %}
   {% set img_slug = painting.title | slugify %}
-  {% set img_name = painting.image | default(value=img_slug) %}
-  {% set img_path = "/paintings/" ~ img_name ~ ".jpg" %}
+  {% set img_name = painting.image | default(value=img_slug ~ ".jpg") %}
+  {% set img_path = "/paintings/" ~ img_name %}
   {% set image = resize_image(path=img_path, width=480, height=360, op="fit") %}
   <figure>
     <div class="gallery-image-wrapper">
